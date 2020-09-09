@@ -7,6 +7,6 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome to ASP.NET</h1>
     <p>Hello, world! The time on the server is @DateTime.Now</p>
 </div>
