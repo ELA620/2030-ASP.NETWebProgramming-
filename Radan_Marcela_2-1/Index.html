@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width" />
+ <title>PRICE QUOTATION</title>
+ <link rel="stylesheet" type="text/css" href="style.css" />
+ <link rel="javaScript" type="text/js" href="calculator.js" />
+</head>
+<body>
+ <h1>Price Quotation</h1>
+ <form asp-action="Index" method="post">
+ <div>
+ <label asp-for="MonthlyInvestment">Subtotal:</label>
+ <input asp-for="@MonthlyInvestment"/>
+ 
+ </div>
+ <div>
+ <label asp-for="YearlyInterestRate">Discount Percent:</label>
+ <input asp-for="@YearlyInterestRate" />
+ </div>
+ <div>
+ <label asp-for="Years">Discount Amount:</label>
+ <input asp-for="@Years" />
+ </div>
+ <div>
+ <label>Total:</label>
+ <input value="" >
+ </div>
+ <button type="submit">Calculate</button>
+ <a asp-action="submit">Clear</a>
+ 
+ </form>
+</body>
+</html>

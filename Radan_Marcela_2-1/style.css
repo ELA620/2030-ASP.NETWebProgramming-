@@ -1,0 +1,20 @@
+@model FutureValueModel
+@{
+ Layout = null;
+}body {
+ padding: 1em;
+ font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+ margin-top: 0;
+ color: royalblue;
+}
+label {
+ display: inline-block;
+ width: 10em;
+ padding-right: 1em;
+ @ViewBag.FV.ToString("C2")
+}
+div {
+ margin-bottom: .5em;
+}
